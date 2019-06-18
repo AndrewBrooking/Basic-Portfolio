@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     width: 100%;
 }
 
@@ -18,11 +17,13 @@ header {
 }
 
 nav {
-    font-size: 10pt;
     text-align: right;
     color: #777777;
     width: 65%;
     float: right;
+    position: absolute;
+    top: 85px;
+    right: 430px;
 }
 
 main {
@@ -35,18 +36,33 @@ footer {
     background-color: #666666;
     color: #ffffff;
     text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-top: 10px solid #4aaaa5;
+    padding-top: 15px;
+    border-top: 8px solid #4aaaa5;
 }
 
 a:link, a:visited, a:hover, a:active {
     color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     text-decoration: none;
+    padding: 1%;
 }
 
-br {
-    background: #4aaaa5;
+p {
+    font-size: 12pt;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+h2 {
+    color: #4aaaa5;
+    font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+    padding: 1%;
+    padding-left: 0;
+    border-bottom: 3px solid #ddd;
+}
+
+h6 {
+    padding-bottom: 10px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 .container {
@@ -54,22 +70,14 @@ br {
     width: 100%;
 }
 
-.banner, .title, .content {
+.banner-outer {
+    background-color: #ffffff;
+    border-bottom: 2px solid #ddd;
+}
+
+.banner-inner, .title, .content {
     width: 960px;
     margin-left: 25%;
-}
-
-.banner {
-    background-color: #ffffff;
-    border-bottom: 1px solid #666666;
-}
-
-.title {
-    background-color: #ffffff;
-    color: #4aaaa5;
-    padding: 1%;
-    margin-bottom: 0;
-    border-bottom: 1px solid #666666;
 }
 
 .content {
@@ -77,4 +85,5 @@ br {
     font-size: 14pt;
     padding: 1%;
     margin-top: 0;
+    border: 1px solid #ddd;
 }
